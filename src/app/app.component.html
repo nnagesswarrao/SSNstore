@@ -1,3 +1,106 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-header class="sdeMnuHdr">
+        <ion-toolbar style="background: transparent!important;">
+          <ion-title class="sdebr_hdr">
+            <div class="h-l">
+              <ion-row>
+                <ion-col size="3">
+                  <div class="logo">
+                    <img src="assets/img/logo.png" alt="D" height="70px">
+                  </div>
+                </ion-col>
+                <ion-col size="9">
+                  <div>
+                    <div style="color: darkgreen; font-size: 16px;">T.S.R.T.C</div>
+                    <hr class="hr-line">
+                    <span class="t-sub">
+                      GovernmenTt of Telangana
+                    </span>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </div>
+
+            <div class="m-d">
+              <ion-row>
+                <ion-col size="1">
+                  <ion-icon name="person-outline" class="b-i"></ion-icon>
+                </ion-col>
+                <ion-col size="11">
+                  <div class="b-n" style="margin-bottom: 11px;">225424</div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="8">
+                  <ion-row>
+                    <ion-col size="1">
+                      <ion-icon name="library-outline" class="b-i"></ion-icon>
+                    </ion-col>
+                    <ion-col size="11">
+                      <div class="b-n" style="margin-left: 17px;">56456456</div>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content class="sdeMnuIonCntnt">
+<!--
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+          <ion-item (click)="navigatePage(p.app_url_tx)" lines="none" detail="false" routerLinkActive="selected">
+            <ion-icon [ios]="p.icon + '-outline'" [md]="p.app_lgo_tx + '-outline'"></ion-icon>
+            <ion-label>{{ p.app_nm }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle> -->
+
+
+
+        <ion-menu-toggle auto-hide="false">
+          <!-- <ion-item (click)="navigatePage('user/change-password')" lines="none" detail="false" routerLinkActive="selected">
+            <ion-icon [md]="'key' + '-outline'"></ion-icon> -->
+            <!-- <ion-label>Change Password</ion-label>
+          </ion-item> -->
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <!-- <ion-item (click)="navigatePage('logout')" lines="none" detail="false" routerLinkActive="selected">
+            <ion-icon [md]="'log-out' + '-outline'"></ion-icon> -->
+            <!-- <ion-label>Logout</ion-label>
+          </ion-item> -->
+        </ion-menu-toggle>
+
+      </ion-content>
+
+
+      <ion-footer>
+        <ion-row>
+          <ion-col size="12">
+            <div style="text-align: center;
+            font-size: 11px;"> version: <span style="font-size: 13px;
+                  margin-right: 8px;
+                  color: #1e8bbc;
+                  font-weight: bold;">1.2.3</span>
+            </div>
+          </ion-col>
+          <ion-col size="12" style="border-top: 1px solid #e6e6e6;
+          text-align: center;">
+            <span class="pwrdbyTxt">Powered by</span>
+            <img src="assets/img/ds_logo.png" width="50%">
+          </ion-col>
+        </ion-row>
+      </ion-footer>
+    </ion-menu>
+
+    <ion-router-outlet id="main-content" style="width: 100%"></ion-router-outlet>
+  </ion-split-pane>
+
+
+
+
+
 </ion-app>

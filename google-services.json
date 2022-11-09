@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "66913296928",
+    "firebase_url": "https://snsstore-1d66f-default-rtdb.firebaseio.com",
+    "project_id": "snsstore-1d66f",
+    "storage_bucket": "snsstore-1d66f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66913296928:android:018f10827953c7c1eb1245",
+        "android_client_info": {
+          "package_name": "com.sns.stores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66913296928-ebt3ooig7gnacfur90d0d36lq5c7pdr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ2gjkp8Q0lRasukvLrsNnCi7LpeSBXp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66913296928-ebt3ooig7gnacfur90d0d36lq5c7pdr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
